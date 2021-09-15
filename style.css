@@ -36,31 +36,39 @@ a{
 }
 .menu
 {
-  
-  padding: 15px;
+  padding: 20px;
+  height: 50px;
   background: #252525;
+}
+@media (min-width: 960px)
+{
+  .menu{
+    height: 70px;
+    padding: 30px;
+  }
+  #sobre p{
+    font-size: 1.8em;
+  }
+  .mano{
+    font-size: 1.8em;
+  }
 }
 .menu-nav{
   flex: 1;
   align-self: center;
   margin: 0;
 }
-.menu-logo{
-  align-self: center;
-  margin: 0;
-  padding: 0 10px 10px 10px;
-}
+
 .fa-yin-yang{
   font-size: 2em;
 }
 .menu-nav ul{
   display: flex;
   float: right;
-  
 }
 
 .menu-nav ul li a{
-  padding: 3px 20px;
+  padding: 3px 10px;
   
 }
 .menu-nav a:hover{
