@@ -1,0 +1,241 @@
+:root{
+  --hue: 641;
+  --color-purple: #6917BD;
+  --container-max-width: 500px;
+  --body-color: #100024;
+  --color-white: #fff;
+}
+body, h1,h2,h3,p,ul{
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3{
+  color: var(--color-white);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+body{
+  font-family: georgia, serif;
+  color: #252525;
+  background: var(--body-color);
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  color: var(--color-purple);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.container
+{
+  display: flex;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  flex-direction: column;
+}
+.menu
+{
+  
+  padding: 15px;
+  background: #252525;
+}
+.menu-nav{
+  flex: 1;
+  align-self: center;
+  margin: 0;
+}
+.menu-logo{
+  align-self: center;
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+.fa-yin-yang{
+  font-size: 2em;
+}
+.menu-nav ul{
+  display: flex;
+  float: right;
+  
+}
+
+.menu-nav ul li a{
+  padding: 3px 20px;
+  
+}
+.menu-nav a:hover{
+  background-color: #D1D1D1;
+  
+}
+@keyframes hover{
+  100%{
+    transform: rotate(1800deg);
+  }
+}
+/*@media (min-width: 960px) se tiver 960px(DPI) ou menor, vai retornar algo abaixo
+{
+  body{
+    background: #0F21E2;
+  }
+  .container{
+    max-width: 300;
+    flex-direction: column;
+  }
+  .menu-nav, menu-logo{
+    margin: 0;
+  }
+  .menu ul li a{
+    padding: 0 10px;
+  }
+}*/
+.intro{
+  background: url('img/yin-yang.jpg') no-repeat center;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+}
+.subtitle{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.subtitle::after{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 50px;
+  margin: 10px auto;
+  background: var(--color-purple);
+}
+p{
+  color: #E3E3E3;
+  font-size: 1.125em;
+  font-style: italic;
+}
+#mais{
+  margin-bottom: 10px;
+  padding: 60px 0;
+  background: url('img/Fire-water.jpg/') no-repeat center;
+  background-size: cover;
+}
+#mais h2{
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #DF8311;
+  display: block;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 1px #606060;
+}
+#mais h2 span{
+  color: #11C8DF;
+  
+}
+
+.align-center{
+  align-self: center;
+}
+.btn{
+  color: #F6F6F6;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  display: block;
+  background: linear-gradient(to right, #0E95C5, #C56F0E);
+  font-weight: bold;
+  opacity: 70%;
+  font-family: monospace;
+  border-radius: 1rem;
+}
+.btn:hover{
+  color: #850EC5;
+  transition: opacity 1s;
+  transition: color 1s;
+  opacity: 100%;
+}
+#ler_mais
+{
+  visibility: hidden;
+}
+.mano {
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1em;
+  background: linear-gradient(to right, #0E95C587, #C56F0E85);
+}
+#sobre{
+  margin: 10px 0;
+  background: url("img/Sexo.jpg") no-repeat center;
+  
+  background-size: cover;
+  padding: 10rem 0;
+}
+#sobre .subtitle{
+  font-size: 2em;
+}
+#sobre .subtitle::after{
+  background: #30FF0078;
+  
+}
+#sobre p{
+  color: #BFBFBF;
+  padding: 20px;
+  background: #00000073;
+}
+
+#sobre .btn{
+  opacity: 100%;
+  text-align: center;
+  width: 200px;
+  background: linear-gradient(to right, #4383B2BD, #6A43B2B5);
+}
+#sobre .btn:hover{
+  color: #00FF2C;
+  background: linear-gradient(to left, #6A43B2EB,#4395B2EB);
+  
+}
+
+
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(
+  270deg,
+  hsla(var(--hue), 36%, 57%, 1),
+  hsla(var(--hue), 65%, 88%, 0.34)
+  );
+}
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+  270deg,
+  hsla(var(--hue), 65%, 88%, 0.34),
+  hsla(var(--hue), 36%, 57%, 1)
+  );
+}
+.footer{
+  background: #3900AC;
+  width: 100%;
+  height: 7rem;
+}
+.iconss{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconss img{
+  width: 100px;
+  height: 50px;
+  padding: 0;
+}
+.logo{
+  color: #FFF600;
+  padding: 10px;
+  font-size: 2em;
+}
