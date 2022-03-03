@@ -1,0 +1,230 @@
+:root
+{
+  --hue: 641;
+  --purple: 270, 75%;
+  --white: 0, 0%;
+}
+
+*, ::after, ::before
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: clamp(14px + 1vw, 2vw, 2vw + 0.75rem);
+}
+
+body
+{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: hsl(var(--white), 100%);
+  background: hsl(var(--purple), 2%);
+  letter-spacing: .1rem;
+  width: 100%;
+}
+
+navbar ul
+{
+  width: 100%;
+  padding: 0.5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+navbar li
+{
+  display: flex;
+  align-items: center;
+  padding: 2% 1%;
+  height: 100%;
+}
+
+navbar li a:hover
+{
+  border-radius: 5%;
+  color: hsl(var(--purple), 55%);
+  background-color: hsl(var(--white), 0%);
+  
+}
+
+navbar a
+{
+  color: hsl(var(--white), 100%);
+  text-transform: uppercase;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header
+{
+  margin: 1% 0;
+  background: linear-gradient(hsla(0, 0%, 0%, 50%), hsla(0, 0%, 0%, 90%) 100%), url('../img/yin-yang.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 35vh;
+  text-align: center;
+}
+
+header h1
+{
+  width: 95%;
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(16px + 2vw, 10vw, 12vw);
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  filter: brightness(100%);
+}
+
+header h2
+{
+  width: 90%;
+  font-size: clamp(16px + 2vw, 4vw, 10vw);
+}
+
+.divider
+{
+  height: .5vw;
+  background: linear-gradient( 270deg, 
+  hsla(var(--hue), 50%, 60%, 100%), 
+  hsla(var(--hue), 25%, 20%, 40%));
+  filter: opacity(50%);
+}
+
+.half-rotate 
+{
+  transform: rotate(180deg);
+}
+
+#significado
+{
+  height: clamp(40vh, 100% , 500vh);
+  padding: 1% 0;
+  margin: 1% 0;
+  background: linear-gradient(hsla(0, 0%, 0%, 50%), hsla(0, 0%, 0%, 90%) 100%), url('../img/Fire-water.jpg');
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+
+button
+{
+  padding: 1% 2%;
+  margin: 1.5% 0;
+  color: hsl(var(--white), 100%);
+  background-color: hsl(var(--white), 0%);
+  border-radius: 10rem;
+  border: solid 2px hsla(var(--white), 50%);
+}
+
+button:hover
+{
+  filter: invert();
+  border: solid 2px hsl(var(--white), 0%);
+}
+
+.invisivel
+{
+  display: none;
+}
+
+.info
+{
+  width: 70vw;
+  padding: 2%;
+  margin-bottom: 1%;
+  border: solid 2px hsl(var(--white), 100%);
+  border-radius: 1rem; 
+  background: linear-gradient(to right, 
+  hsla(196, 100%, 20%, 85%),
+  hsla(32, 100%, 20%, 85%));
+  text-align: center;
+}
+
+#sobre
+{
+  padding: 1% 0;
+  margin: 1% 0;
+  background: linear-gradient(hsla(0, 0%, 0%, 50%), hsla(0, 0%, 0%, 90%) 100%), url('../img/Coder.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3
+{
+  text-transform: capitalize;
+  font-size: clamp(16px + 1.5vw, 4vw, 8.5vw);
+}
+
+#sobre p
+{
+  padding: 2%;
+  width: 70%;
+  background-color: hsla(0, 0%, 0%, 3%);
+}
+
+#sobre a
+{
+  padding: 1% 2%;
+  margin: 1.5% 0;
+  color: hsl(var(--white), 100%);
+  background-color: hsl(var(--white), 0%);
+  border-radius: 10rem;
+  border: solid 2px hsla(var(--white), 50%);
+}
+
+#sobre a:hover
+{
+  filter: invert();
+  border: solid 2px hsl(var(--white), 0%);
+}
+
+footer
+{
+  height: clamp(8vh, 2.5rem, 5%);
+  background-color: hsl(var(--purple), 5%);
+  padding: 2% 0;
+  margin: 1% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+footer a img
+{
+  width: 30px;
+  filter: invert();
+}
+
+footer #logo
+{
+  color: hsl(var(--white), 100%);
+  padding: 1%;
+  font-size: clamp(16px + 1.5vw, 4vw, 8.5vw);
+  text-transform: capitalize;
+}
+
+@media screen and (max-width:580px) 
+{
+  navbar ul
+  {
+    flex-direction: column; 
+  }
+}

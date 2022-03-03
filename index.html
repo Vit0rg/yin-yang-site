@@ -4,89 +4,106 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>yin yang by eriton</title>
-  
+  <title>Yin Yang</title>
+  <!--Icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  
-  <link rel="stylesheet" href="css/normalize.css"/>
-  <!-- login -->
-  <link rel="stylesheet" href="css/login.css"/>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Login -->
+  <link rel="stylesheet" href="./css/login.css"/>
+
+  <script defer src="main.js"></script>
   
 </head>
 
 <body>
-  <header class="menu" id="header">
-    <div class="container">
-    <nav class="menu-nav">
-      
-      <ul class="">
-        <li><a href="#sobre">testimonial</a></li>
-        <li><a href="#footer">contatos</a></li>
-        <li><a href="#logar">logar</a></li>
+  <navbar>   
+      <ul>
+        <li><a href = "#sobre">testimonial</a></li>
+        <li><a href = "#footer">contatos</a></li>
+        <li><a href = "#logar">logar</a></li>
       </ul>
-      
-    </nav>
-    
-  </header>
-  <main class="intro">
-    <h2 class="subtitle">o yin yang</h2>
-    <p>ambos o oposto de ambos. </p>
-  </main>
-  <div class="divider-2">
-    
-  </div>
-  <section id="mais">
-    <div class="container">
-      <a class="btn align-center" id="text_click" onclick="sexo();">ler mais</a>
-      <p class="mano">Yin Yang é um princípio da filosofia chinesa,<span id="ler_menos"></span><span id="ler_mais"> onde yin e yang são duas energias opostas. Yin significa escuridão sendo representado pelo lado pintado de preto, e yang é a claridade. ... No mundo das tatuagens, o símbolo do yin yang é dos mais populares, dado que representa o equilíbrio.</span></p>
-    </div>
+  </navbar>
 
-  </section>
-  <div class="divider-1"> </div>
-  <section id="sobre" class="sobre_cu">
-    <div class="container">
-      <h2 class="subtitle subtitle_sexo align-center">testimonial</h2>
-      <p>nao tenho oque colocar aqui entao nao ligue para o resto aleatório. <br> bom que ele não é um dos mais que trabalha na hora de login e senha no caso o do Que a gente treina fazendo o modo do </p>
-      <a class="btn align-center" href="#">eu irei.</a>
-    </div>
-  </section>
-  <section id="logar">
-    <h2 class="subtitle" style="color: #c5c5c5; padding-top: 20px;">Logar</h2>
-  <form id="login" action="">
-    <div class="inputs">
-    <p><input placeholder="username"> </p>
-    <p><input placeholder="password"> </p>
-    </div>
-    <div class="password">
-      <p> esqueceu  a senha? <a class="msg">recupere aqui!</a></p>
-    </div>
-    <div class="cu">
-      <a class="bot" href="#">sign in</a>
-    </div>
-    <div class="password_1">
-            <p>não tem conta? <a class="msg">crie uma aqui!</a></p>
-    </div>
-    <div class="icons">
-      <a href="https://github.com/Both-Eritons" class="github"><i class="fab fa-github-alt"></i></a>
+  <div class="divider"></div>
+
+  <header class="container">
+    <h1>Yin Yang</h1>
+    <h2>ambos o oposto de ambos</h2>
+  </header>
+
+  <div class="divider half-rotate"></div>
+
+  <main>
+    <section id="significado" class="container">
+        <p class="info">
+          Yin Yang é um princípio da filosofia chinesa, 
+          onde yin e yang são duas energias opostas. 
+          <span class="mostrar_mais invisivel">
+          Yin significa escuridão sendo representado pelo lado pintado
+          de preto, e yang é a claridade... No mundo das tatuagens,
+          o símbolo do yin yang é um dos mais populares, dado que representa o equilíbrio.
+          </span>
+        </p>
+        <button onclick="show_info()">
+          Ler mais
+        </button>
+    </section>
+
+    <div class="divider"> </div>
+
+    <section id="sobre" class="container">
+        <h3>testimonial</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Commodi, totam. Eum debitis beatae deleniti, itaque, asperiores
+          aut nobis, quaerat vitae quae alias ipsam totam. Quos aspernatur
+          a in earum soluta. Quaerat inventore id illum iste repellat odit
+          laboriosam error, rem sapiente a voluptatem earum cum ducimus 
+          repudiandae quia perspiciatis blanditiis cupiditate architecto 
+          obcaecati ut quas maiores veniam corporis? Recusandae, 
+          reprehenderit? Nesciunt odit distinctio laborum, dolor illo 
+          expedita omnis libero odio. Dolorum, aspernatur facilis minus 
+          dolorem odio ipsa quod, iure animi dolore sit omnis, tenetur culpa 
+          excepturi. Porro officia delectus officiis!
+        </p>
+        <a href="#sobre" target="_self">Latim?</a>
+    </section>
+
+    <div class="divider half-rotate"></div>
+
+    <section id="logar" class="container">
+      <h3>Logar</h3>
+      <form id="login">
+        <input placeholder="Usuário">
+        <input placeholder="Senha">
+
+        <span class="password">Esqueceu a senha? <a>Recupere aqui!</a></span>
+        
+        <a id="botao" href="#">Entrar</a>
+        
+        <p class="password">Não tem conta? <a>Crie uma aqui!</a></p>
       
-    </div>
-  </form>
-    </div>
-  </section>
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="iconss">
-       <a class="" href="https://github.com/Both-Eritons"><img src="icons/fa-facebook.svg"></img></a>
-       <a class="logo" href="#">yin-yang</a>
-       <a class="" href="https://github.com/Both-Eritons/yin-yang-sites"><img src="icons/fa-github.svg"></img></a>
-      </div>
-    </div>
+        <a href="https://github.com/Both-Eritons">
+          <i class="fab fa-github-alt"></i>
+        </a>    
+
+      </form>
+    </section>
+    <div class="divider"></div>
+  </main>
+
+  <footer>
+    <a href="https://github.com/Both-Eritons">
+      <img src="icons/fa-facebook.svg"></img>
+    </a>
+    <a id="logo" href="#">yin-yang</a>
+    <a href="https://github.com/Both-Eritons/yin-yang-sites">
+      <img src="icons/fa-github.svg">
+    </img></a>
   </footer>
   <!-- Project -->
-  <script src="main.js"></script>
+  
   <!--                  JQUERY                     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 </body>

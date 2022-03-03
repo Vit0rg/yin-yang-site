@@ -1,214 +1,111 @@
-:root{
-  --text-color: #fff;
-  
-  --body-color: #f1f1f1;
-  
-  --h1: #0FF548;
-  
-  --button: #57B845;
-  
-  --bg-color: #fff;
-  
-  --gray: #EBEBEB;
-  
-  --verde-escuro: #0B4500;
-}
-#login{
-  
-  background-color: var(--bg-color);
-  
- /* background: linear-gradient(250deg, #9093FF, #3797FF); tire do comentário  se quiser gradient e apaga a de cima.*/
-  
-  margin: 40px auto;
-  
-  padding: 40px 0px;
-  
-  width: 95%;
-  
-  border-radius: 2rem;
-  
-}
-@media (min-width: 960px)
+:root
 {
-  #login{
-    width: 700px;
-  }
-}
-.bot{
-  
-  color: var(--text-color);
-  
-  background-color: var(--button);
-  
-  font-weight: bold;
-  
-  border-radius: 0;
-  
-  height: 3rem;
-  padding: 10px;
-  
-  margin: 20px;
-  
-  display: flex;
-  
-  justify-content: center;
-  
-  align-items: center;
-  
-  text-transform: uppercase;
-  font-size: 20px;
-  
-  animation-name: but;
-  
-  animation-duration: 2s;
-  
-  animation-fill-mode: forwards;
-  
-}
-@keyframes but{
-  100%{
-    border-radius: 2rem;
-  }
-}
-.password{
-  
-  display: flex;
-  
-  flex-wrap: wrap;
-  
-  justify-content: flex-end;
-  
-  padding: 10px;
-  
-  text-transform:capitalize;
-  
-  color: #B1B1B1;
-  
-  
+  --white: 0, 0%;
+  --purple: 270, 75%;
+  --verde-hue: 110;
 }
 
-.password a{
-  
-  color: #7AFF00;
-  
-  padding: 5px;
-  
-}
-.password a:hover{
-  
-  color: darkred;
-  
-  text-decoration: underline;
-  
-  font-weight: bold;
-  
-  text-transform: uppercase;
-  
+#logar
+{
+  height: 25rem;
+  padding: 1%;
+  margin: 1% 0;
+  background-color: hsl(var(--purple), 7%);
+  letter-spacing: .07rem;
 }
 
-.password_1{
-  margin-top: 200px;
-  display: flex;
-  
-  flex-wrap: wrap;
-  
-  justify-content: center;
-  
-  padding: 10px;
-  
-  text-transform:capitalize;
-  
-  color: #B1B1B1;
-  
-}
-
-.password_1 a{
-  
-  color: #7AFF00;
-  
-  padding: 5px;
-  
-}
-.password_1 a:hover{
-  
-  color: darkred;
-  
-  text-decoration: underline;
-  
-  font-weight: bold;
-  
-  text-transform: uppercase;
-  
-}
-
-.inputs p input{
-  padding: 15px;
-  
-  width: 100%;
-  
-  font-size: 17px;
-  
-  border: 1px solid var(--bg-color);
-  
-  background-color: var(--gray);
-  
-  color: var(--verde-escuro);
-  
+#login
+{
+  height: 90%;
+  width: 70%;
+  background-color: hsl(var(--white), 100%);
+  box-shadow: 2vw 2vw hsla(var(--white), 10%, 90%);
+  margin: 2% 0;
+  padding: 1% 0;
   border-radius: 2rem;
-  
-  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.inputs p{
-  padding: 10px;
-  
-}
-input::placeholder{
-  
-  width: 100%;
-  
-  padding: 20px;
-  
-  color: var(--verde-escuro);
-  
-  text-transform: capitalize;
-  
-  font-weight: bold;
-  
+
+input
+{
+  padding: 1% 0;
+  width: 90%;
+  background-color: hsl(var(--white), 80%);
+  color: hsl(var(--verde-hue), 100%, 5%);
+  box-shadow: .5vw .5vw hsla(var(--white), 10%, 70%);
+  border-radius: 2rem;
   text-align: center;
-  
-  border-radius: 2rem;
-  
+  outline: none;
+  border: none;
 }
 
-/*                     ICONES                            */      
-.icons{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  
-  height: 4rem;
+input::placeholder
+{
+  padding: 1%;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  color: hsl(var(--verde-hue), 100%, 10%);
+  border-radius: 2rem;
 }
-.icons a{
-  color: #000000;
-  font-size: 3em;
-  padding: 20px;
+
+.password
+{ 
+  text-align: center;
+  width: 70%;
+  color: hsl(var(--white), 20%);
 }
-.icons a:hover{
-  color: #00FF2F;
-  
-  animation-name: icons;
-  
+
+.password a
+{
+  color: hsl(var(--verde-hue), 100%, 20%);
+}
+
+.password a:hover
+{
+  color: hsl(var(--verde-hue), 100%, 30%);
+  cursor: pointer;
+}
+
+#botao
+{  
+  color: hsl(var(--white), 100%);
+  background-color: hsl(var(--verde-hue), 100%, 10%);
+  box-shadow: .5vw .5vw hsla(var(--white), 10%, 70%);
+  font-weight: bold;
+  border-radius: 0;
+  padding: 2%;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
+#botao:hover
+{
+  background-color: hsl(var(--verde-hue), 100%, 15%); 
+}
+    
+.fa-github-alt
+{
+  color: hsl(var(--white), 20%);
+  padding: 2%;
+}
+
+.fa-github-alt:hover
+{
+  color: hsl(var(--purple), 50%);
+  animation-name: github;
   animation-duration: 2s;
-  
   animation-fill-mode: forwards;
 }
 
-@keyframes icons{
-  100%{
+@keyframes github
+{
+  100%
+  {
     transform: rotate(1800deg);
-    color: #C3BF47;
-    font-size: 5em;
+    color: hsl(var(--verde-hue), 100%, 50%);
   }
 }

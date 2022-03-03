@@ -1,18 +1,8 @@
-function sexo(){
-  var a = document.getElementById("ler_mais");
-  var b = document.getElementById("ler_menos");
-  var c = document.getElementById("text_click");
-  
-  if(b.style.visibility === "hidden")
-  {
-    b.style.visibility = "visible";
-    a.style.visibility = "hidden";
-    c.innerHTML = "ler mais..."
-  }
-  else
-  {
-    b.style.visibility = "hidden";
-    a.style.visibility = "visible";
-    c.innerHTML = "ler menos..."
-  }
+const info = document.querySelector('.mostrar_mais');
+const botao = document.querySelector('button');
+
+function show_info()
+{
+  info.classList.toggle("invisivel");
+  info.classList.contains('invisivel') ?  botao.innerText = 'Ler mais' : botao.innerText = 'Ler menos';  
 }
