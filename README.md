@@ -19,7 +19,7 @@ Página autoral criada com base em estudos sobre responsividade (CSS3) e manipul
 ## Autores:
 
 [Both-Eritons](https://github.com/Both-Eritons)
-[Vit0rg](<(https://github.com/Vit0rg)>)
+[Vit0rg](https://github.com/Vit0rg)
 
 **EN**
 
@@ -41,4 +41,4 @@ Dark-themed landing page on Yin Yang. Author's page created based on studies on 
 ## Authors:
 
 [Both-Eritons](https://github.com/Both-Eritons)
-[Vit0rg](<(https://github.com/Vit0rg)>)
+[Vit0rg](https://github.com/Vit0rg)
