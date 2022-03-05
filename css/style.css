@@ -156,7 +156,7 @@ button:hover
   margin: 1% 0;
   padding: 1% 0;
   width: 100%;
-  background: -moz-linear-gradient(right, hsl(0, 100%, 30%), hsl(220, 100%, 30%));
+  background: linear-gradient(to right, hsl(0, 100%, 30%), hsl(220, 100%, 30%));
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -204,7 +204,7 @@ button:hover
 {
   padding: 1% 0;
   margin: 1% 0;
-  background: -moz-linear-gradient(left,hsla(0, 100%, 8%, 95%), hsla(220, 100%, 8%, 95%) 100%), url('../img/yin-yang-simbolo.png');
+  background: linear-gradient(to left,hsla(0, 100%, 8%, 95%), hsla(220, 100%, 8%, 95%) 100%), url('../img/yin-yang-simbolo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -214,7 +214,7 @@ button:hover
 
 .sobre:nth-of-type(2)
 {
-  background: -moz-linear-gradient(right,hsla(0, 100%, 8%, 95%), hsla(220, 100%, 8%, 95%) 100%), url('../img/yin-yang-simbolo.png');
+  background: linear-gradient(to right,hsla(0, 100%, 8%, 95%), hsla(220, 100%, 8%, 95%) 100%), url('../img/yin-yang-simbolo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

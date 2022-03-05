@@ -10,7 +10,7 @@
   height: 20rem;
   padding: 1%;
   margin: 1% 0;
-  background: -moz-linear-gradient(left, hsl(305, 100%, 3%), hsl(51, 100%, 3%));
+  background: linear-gradient(to left, hsl(305, 100%, 3%), hsl(51, 100%, 3%));
   letter-spacing: .07rem;
 }
 
