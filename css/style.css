@@ -2,7 +2,7 @@
 {
   --hue: 641;
   --purple: 270, 75%;
-  --white: 0, 0%;
+  --neutro: 0, 0%;
 }
 
 *, ::after, ::before
@@ -17,7 +17,7 @@
 body
 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: hsl(var(--white), 100%);
+  color: hsl(var(--neutro), 100%);
   background: hsl(var(--purple), 2%);
   letter-spacing: .1rem;
   width: 100%;
@@ -26,32 +26,30 @@ body
 navbar ul
 {
   width: 100%;
-  padding: 0.5% 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style-type: none;
+  background-color: hsl(var(--purple), 3%);
 }
 
 navbar li
 {
   display: flex;
   align-items: center;
-  padding: 2% 1%;
+  padding: 2% 3%;
   height: 100%;
+  background-color: hsl(var(--purple), 2%);
 }
 
-navbar li a:hover
+navbar li:hover
 {
-  border-radius: 5%;
-  color: hsl(var(--purple), 55%);
-  background-color: hsl(var(--white), 0%);
-  
+  filter: invert();
 }
 
 navbar a
 {
-  color: hsl(var(--white), 100%);
+  color: hsl(var(--neutro), 100%);
   text-transform: uppercase;
 }
 
@@ -122,16 +120,16 @@ button
 {
   padding: 1% 2%;
   margin: 1.5% 0;
-  color: hsl(var(--white), 100%);
-  background-color: hsl(var(--white), 0%);
+  color: hsl(var(--neutro), 100%);
+  background-color: hsl(var(--neutro), 0%);
   border-radius: 10rem;
-  border: solid 2px hsla(var(--white), 50%);
+  border: solid 2px hsla(var(--neutro), 50%);
 }
 
 button:hover
 {
   filter: invert();
-  border: solid 2px hsl(var(--white), 0%);
+  border: solid 2px hsl(var(--neutro), 0%);
 }
 
 .invisivel
@@ -143,8 +141,8 @@ button:hover
 {
   width: 70vw;
   padding: 2%;
-  margin-bottom: 1%;
-  border: solid 2px hsl(var(--white), 100%);
+  margin-bottom: 2%;
+  border: solid 2px hsl(var(--neutro), 100%);
   border-radius: 1rem; 
   background: linear-gradient(to right, 
   hsla(196, 100%, 20%, 85%),
@@ -152,17 +150,74 @@ button:hover
   text-align: center;
 }
 
-#sobre
+#simbolo
+{
+  max-height: 45vw;
+  margin: 1% 0;
+  padding: 1% 0;
+  width: 100%;
+  background: -moz-linear-gradient(right, hsl(0, 100%, 30%), hsl(220, 100%, 30%));
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#simbolo .pilar-yin-yang
+{
+  height: 40vw;
+  width: 10%;
+  background-color: hsl(var(--neutro), 0%);
+}
+
+#simbolo .pilar-yin-yang:last-of-type
+{
+  background-color: hsl(var(--neutro), 100%);
+}
+
+#simbolo img
+{
+  padding: 1%;
+  max-width: 50%;
+  height: 40vw;
+  border-radius: 50%;
+}
+
+#simbolo img:hover
+{
+  animation: yin-yang-fx linear 5s infinite forwards;
+  cursor: wait;
+}
+
+@keyframes yin-yang-fx 
+{
+  0%
+  {
+    background-color: hsl(var(--purple), 30%);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+    filter:opacity(100%);
+  }
+}
+
+.sobre
 {
   padding: 1% 0;
   margin: 1% 0;
-  background: linear-gradient(hsla(0, 0%, 0%, 50%), hsla(0, 0%, 0%, 90%) 100%), url('../img/Coder.jpg');
+  background: -moz-linear-gradient(left,hsla(0, 100%, 8%, 95%), hsla(220, 100%, 8%, 95%) 100%), url('../img/yin-yang-simbolo.png');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: space-between;
+}
+
+.sobre:nth-of-type(2)
+{
+  background: -moz-linear-gradient(right,hsla(0, 100%, 8%, 95%), hsla(220, 100%, 8%, 95%) 100%), url('../img/yin-yang-simbolo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 h3
@@ -171,27 +226,27 @@ h3
   font-size: clamp(16px + 1.5vw, 4vw, 8.5vw);
 }
 
-#sobre p
+.sobre p
 {
   padding: 2%;
   width: 70%;
-  background-color: hsla(0, 0%, 0%, 3%);
+  
 }
 
-#sobre a
+.sobre a
 {
   padding: 1% 2%;
   margin: 1.5% 0;
-  color: hsl(var(--white), 100%);
-  background-color: hsl(var(--white), 0%);
+  color: hsl(var(--neutro), 100%);
+  background-color: hsl(var(--neutro), 0%);
   border-radius: 10rem;
-  border: solid 2px hsla(var(--white), 50%);
+  border: solid 2px hsla(var(--neutro), 50%);
 }
 
-#sobre a:hover
+.sobre a:hover
 {
   filter: invert();
-  border: solid 2px hsl(var(--white), 0%);
+  border: solid 2px hsl(var(--neutro), 0%);
 }
 
 footer
@@ -209,13 +264,13 @@ footer
 
 footer a img
 {
-  width: 30px;
+  width: 3rem;
   filter: invert();
 }
 
 footer #logo
 {
-  color: hsl(var(--white), 100%);
+  color: hsl(var(--neutro), 100%);
   padding: 1%;
   font-size: clamp(16px + 1.5vw, 4vw, 8.5vw);
   text-transform: capitalize;
@@ -225,6 +280,13 @@ footer #logo
 {
   navbar ul
   {
-    flex-direction: column; 
+    flex-direction: column;
+  }
+  navbar li
+  {
+    margin: 1% 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 }

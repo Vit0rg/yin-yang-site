@@ -7,10 +7,10 @@
 
 #logar
 {
-  height: 25rem;
+  height: 20rem;
   padding: 1%;
   margin: 1% 0;
-  background-color: hsl(var(--purple), 7%);
+  background: -moz-linear-gradient(left, hsl(305, 100%, 3%), hsl(51, 100%, 3%));
   letter-spacing: .07rem;
 }
 
@@ -48,7 +48,7 @@ input::placeholder
   text-transform: capitalize;
   font-weight: bold;
   text-align: center;
-  color: hsl(var(--verde-hue), 100%, 10%);
+  color: hsl(var(--verde-hue), 100%, 4%);
   border-radius: 2rem;
 }
 
@@ -84,13 +84,15 @@ input::placeholder
 
 #botao:hover
 {
-  background-color: hsl(var(--verde-hue), 100%, 15%); 
+  background-color: hsl(var(--verde-hue), 100%, 25%); 
 }
-    
-.fa-github-alt
+
+i::before 
 {
-  color: hsl(var(--white), 20%);
-  padding: 2%;
+	display: inline-block;
+	font-size: 3rem;
+	text-align: center;
+  align-self: center;
 }
 
 .fa-github-alt:hover

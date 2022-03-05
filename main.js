@@ -1,8 +1,19 @@
-const info = document.querySelector('.mostrar_mais');
-const botao = document.querySelector('button');
+const more_info = document.querySelectorAll('.mostrar-mais');
+const botao = document.querySelectorAll('button');
 
-function show_info()
+console.log(botao)
+
+console.log(more_info);
+
+function show_more()
 {
-  info.classList.toggle("invisivel");
-  info.classList.contains('invisivel') ?  botao.innerText = 'Ler mais' : botao.innerText = 'Ler menos';  
+  more_info.forEach(element => 
+  {
+    element.classList.toggle('invisivel');
+  });
+
+  botao.forEach(element => 
+  {
+    element.innerText === 'Ler menos' ?  element.innerText = 'Ler mais' : element.innerText = 'Ler menos';  
+  });
 }

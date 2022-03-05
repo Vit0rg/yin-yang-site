@@ -19,61 +19,106 @@
 <body>
   <navbar>   
       <ul>
-        <li><a href = "#sobre">testimonial</a></li>
-        <li><a href = "#footer">contatos</a></li>
+        <li><a href = "#definicao">definição</a></li>
+        <li><a href = "#origem">origem</a></li>
+        <li><a href = "#simbolo">símbolo</a></li>
         <li><a href = "#logar">logar</a></li>
+        <li><a href = "#footer">contatos</a></li>
       </ul>
   </navbar>
 
   <div class="divider"></div>
-
   <header class="container">
     <h1>Yin Yang</h1>
     <h2>ambos o oposto de ambos</h2>
   </header>
-
   <div class="divider half-rotate"></div>
 
   <main>
     <section id="significado" class="container">
         <p class="info">
-          Yin Yang é um princípio da filosofia chinesa, 
-          onde yin e yang são duas energias opostas. 
-          <span class="mostrar_mais invisivel">
-          Yin significa escuridão sendo representado pelo lado pintado
-          de preto, e yang é a claridade... No mundo das tatuagens,
-          o símbolo do yin yang é um dos mais populares, dado que representa o equilíbrio.
-          </span>
+          Esta doutrina é de uso corrente na medicina tradicional chinesa.
+          Nos estudos de I Ching, são duas as Linhas Iniciais geradas pelo
+          Tai Ji, uma Inteira Yang e uma Quebrada Yin, formando o Liang Yi.
         </p>
-        <button onclick="show_info()">
+        
+        <p class="info mostrar-mais invisivel">
+          Segundo essa ideia, cada ser, objeto ou pensamento possui um 
+          complemento do qual depende para a sua existência.
+          Esse complemento existe dentro de si. Assim, se deduz que nada
+          existe no estado puro: nem na atividade absoluta, nem na 
+          passividade absoluta, mas sim em transformação contínua.
+        </p>
+
+        <p class="info mostrar-mais invisivel">
+          Além disso, qualquer ideia pode ser vista como seu oposto quando
+          visualizada a partir de outro ponto de vista.
+          Neste sentido, a categorização seria apenas por conveniência. 
+          Estas duas forças, yin e yang, seriam a fase seguinte do "tao", 
+          princípio gerador de todas as coisas, de onde surgem e para onde
+          se destinam.
+        </p>
+      
+        <button onclick="show_more()">
           Ler mais
         </button>
     </section>
-
     <div class="divider"> </div>
-
-    <section id="sobre" class="container">
-        <h3>testimonial</h3>
+    <section id = "definicao" class="sobre container">
+        <h3>O Tao</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Commodi, totam. Eum debitis beatae deleniti, itaque, asperiores
-          aut nobis, quaerat vitae quae alias ipsam totam. Quos aspernatur
-          a in earum soluta. Quaerat inventore id illum iste repellat odit
-          laboriosam error, rem sapiente a voluptatem earum cum ducimus 
-          repudiandae quia perspiciatis blanditiis cupiditate architecto 
-          obcaecati ut quas maiores veniam corporis? Recusandae, 
-          reprehenderit? Nesciunt odit distinctio laborum, dolor illo 
-          expedita omnis libero odio. Dolorum, aspernatur facilis minus 
-          dolorem odio ipsa quod, iure animi dolore sit omnis, tenetur culpa 
-          excepturi. Porro officia delectus officiis!
+          Yin e Yang são conceitos do taoismo que expõem a 
+          dualidade de tudo que existe no universo. Descrevem as duas forças 
+          fundamentais opostas e complementares que se encontram em todas as
+          coisas: o yin é o princípio da noite, Lua, a passividade, absorção.
+          O yang é o princípio do Sol, dia, a luz e atividade. 
         </p>
-        <a href="#sobre" target="_self">Latim?</a>
+        <p class="mostrar-mais invisivel">
+          A realidade observada é fluida e em constante mutação, 
+          na perspectiva da filosofia chinesa tradicional. Portanto, 
+          tudo que existe contém tanto o princípio yin quanto o yang. 
+          O símbolo tei-gi expressa esse conceito: o yang origina o yin,
+          e o yin destina o yang.
+        </p>
+        <button onclick="show_more()">
+          Ler mais
+        </button>
     </section>
-
     <div class="divider half-rotate"></div>
-
+    <section id ="origem" class="sobre container">
+      <h3>Origem</h3>
+      <p>
+        Desde os primeiros tempos, os dois polos arquetípicos da natureza 
+        foram representados pelo claro e pelo escuro, pelo inflexível e pelo
+        dócil, pelo acima e pelo abaixo. O yang, o poder criador, era 
+        associado ao céu e ao Sol, enquanto o yin corresponde à água,
+        ao receptivo. O céu está acima e está cheio de movimento. A água
+        - na antiga concepção geocêntrica - está em baixo e em repouso.
+      </p>
+      <p class="mostrar-mais invisivel">
+          Dessa forma, yin passou a simbolizar o repouso, e yang, o movimento. 
+          No reino do pensamento, yin é a mente intuitiva, complexa, ao passo
+          que yang é o intelecto, racional e claro. Yin é a tranquilidade
+          contemplativa do sábio, yang a vigorosa ação criativa do rei.
+      </p>
+      <p class="mostrar-mais invisivel">
+        Esse diagrama apresenta uma disposição simétrica do yin sombrio
+        e do yang claro. A simetria, contudo, não é estática. É uma simetria
+        rotacional que sugere, de forma eloquente, um contínuo movimento
+        cíclico. Os dois pontos do diagrama simbolizam a ideia de que,
+        toda vez que cada uma das forças atinge seu ponto extremo,
+        manifesta, dentro de si, a semente de seu oposto.
+      </p>
+      <a href="https://pt.wikipedia.org/wiki/Yin_yang" target="_blank">Artigo completo</a>
+    </section>
+    <div class="divider"></div>
+    <section id = "simbolo" class="container">
+      <div class="pilar-yin-yang"></div>
+      <img src="./img/yin-yang-simbolo.png" alt="yin-yang-simbolo">
+      <div class="pilar-yin-yang"></div>
+    </section>
+    <div class="divider half-rotate"></div>
     <section id="logar" class="container">
-      <h3>Logar</h3>
       <form id="login">
         <input placeholder="Usuário">
         <input placeholder="Senha">
@@ -84,7 +129,7 @@
         
         <p class="password">Não tem conta? <a>Crie uma aqui!</a></p>
       
-        <a href="https://github.com/Both-Eritons">
+        <a class="icones" href="https://github.com/">
           <i class="fab fa-github-alt"></i>
         </a>    
 
@@ -94,17 +139,13 @@
   </main>
 
   <footer>
-    <a href="https://github.com/Both-Eritons">
-      <img src="icons/fa-facebook.svg"></img>
+    <a href="https://github.com/Vit0rg">
+      <img src="icons/fa-github.svg" alt="github"></img>
     </a>
     <a id="logo" href="#">yin-yang</a>
-    <a href="https://github.com/Both-Eritons/yin-yang-sites">
-      <img src="icons/fa-github.svg">
-    </img></a>
+    <a href="https://github.com/Both-Eritons">
+      <img src="icons/fa-github.svg" alt="github"></img>
+    </a>
   </footer>
-  <!-- Project -->
-  
-  <!--                  JQUERY                     
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 </body>
 </html>
